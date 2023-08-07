@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
     limit: "5mb",
     extended: true
 }));
-app.use(cors());
+app.use(cors({origin : "*"}));
 
 app.use('/api', todos);
 
